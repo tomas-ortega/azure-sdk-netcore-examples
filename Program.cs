@@ -8,8 +8,14 @@ namespace azure_sdk_practices_netcore
     {
         static void Main(string[] args)
         {
-            var vmPractice = new AzureVMService();
-            String machineResourceId = "VIRTUAL_MACHINE_RESOURCE_ID";
+            //Program.runAzureVmPractices();
+            //Program.runAzureCosmosDbPractices();
+        }
+
+        static void runAzureVmPractices()
+        {
+             //var vmPractice = new AzureVMService();
+            //String machineResourceId = "VIRTUAL_MACHINE_RESOURCE_ID";
 
             //vmPractice.createResourceGroup();
             /* IAvailabilitySet availabilitySet = vmPractice.createAvailabilitySet();
@@ -22,6 +28,10 @@ namespace azure_sdk_practices_netcore
             //vmPractice.StartVirtualMachine(machineResourceId);
             //vmPractice.resizeVirtualMachine(machineResourceId);
             //vmPractice.AddDataDiskToVirtualMachine(machineResourceId);
+        }
+
+        static void runAzureCosmosDbPractices() {
+            new AzureCosmosDBPractices();
         }
     }
 }
